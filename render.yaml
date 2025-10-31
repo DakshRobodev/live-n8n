@@ -12,3 +12,5 @@ services:
         value: https
       - key: WEBHOOK_URL
         value: https://my-n8n.onrender.com/
+      - key: N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS
+        value: "false"
