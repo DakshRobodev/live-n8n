@@ -4,11 +4,11 @@ FROM n8nio/n8n:latest
 # Set working directory
 WORKDIR /home/node
 
-# Switch to non-root user (official image uses node user)
+# Run as the “node” user (as in official image)
 USER node
 
-# Expose default port for n8n
+# Expose the default n8n port
 EXPOSE 5678
 
-# Run n8n start command
-CMD ["n8n", "start"]
+# Start n8n
+CMD ["start"]
