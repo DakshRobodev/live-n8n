@@ -5,12 +5,12 @@ services:
     dockerfilePath: ./Dockerfile
     envVars:
       - key: N8N_PORT
-        value: 5678
+        value: "5678"
       - key: N8N_HOST
-        value: 0.0.0.0
+        value: "0.0.0.0"
       - key: N8N_PROTOCOL
-        value: https
+        value: "https"
       - key: WEBHOOK_URL
-        value: https://live-n8n-dhoy.onrender.com
-      - key: N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS
-        value: "false"
+        value: "https://live-n8n-dhoy.onrender.com"
+      - key: N8N_USER_MANAGEMENT_DISABLED
+        value: "true"
